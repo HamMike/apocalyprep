@@ -30,13 +30,13 @@ const Alerts = (props) => {
     console.log("in alerts:", props.alerts)
     if (props.alerts === null) {
       return(
-        <p>Alerts is equal </p>
+        <p>No Alerts At the Moment</p>
       )
     } else {
       return(
           <div>
             <h3>alerts</h3>
-            <p>Alert: {props.alerts.data.features[0].properties.headline}</p>
+            <p>Alert: {props.alerts.features[0].properties.headline}</p>
           </div>
           // console.log({this.props.alerts})
         )
